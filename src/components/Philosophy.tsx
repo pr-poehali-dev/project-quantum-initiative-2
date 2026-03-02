@@ -3,23 +3,23 @@ import { HighlightedText } from "./HighlightedText"
 
 const philosophyItems = [
   {
-    title: "Минимализм со смыслом",
+    title: "Безопасность прежде всего",
     description:
-      "Каждый элемент имеет свое назначение и пространство для дыхания. Мы убираем лишнее, чтобы раскрыть то, что действительно важно.",
+      "Все перевозки выполняются в строгом соответствии с требованиями ADR и ДОПОГ. Водители имеют свидетельства ДОПОГ, транспортные средства оборудованы системами контроля давления и температуры.",
   },
   {
-    title: "Архитектурный подход",
+    title: "Надёжность и точность",
     description:
-      "Планировки, вдохновленные структурой, ритмом и материальностью. Здания, которые говорят через пропорции и свет.",
+      "Мы понимаем, что простой производства из-за задержки топлива — это прямые убытки. Поэтому гарантируем соблюдение сроков поставок и оперативно информируем о статусе каждого рейса.",
   },
   {
-    title: "Естественная динамика",
+    title: "Современный парк техники",
     description:
-      "Движение поддерживает восприятие, но никогда не отвлекает. Анимация, которая ощущается естественно, как свет, скользящий по комнате.",
+      "Собственный парк бензовозов и цистерн ёмкостью от 10 до 32 м³. Регулярное техническое обслуживание, оснащение GPS-трекерами и системами экстренного оповещения.",
   },
   {
-    title: "Вневременная эстетика",
-    description: "Элегантный, спокойный и долговечный визуальный язык. Дизайн, который превосходит тренды и стареет с достоинством.",
+    title: "Полное сопровождение",
+    description: "Берём на себя всё: документальное оформление, страхование груза, разрешения на перевозку опасных грузов и координацию с получателями.",
   },
 ]
 
@@ -51,28 +51,26 @@ export function Philosophy() {
     <section id="about" className="py-32 md:py-29">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
-          {/* Left column - Title and image */}
           <div className="lg:sticky lg:top-32 lg:self-start">
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наша философия</p>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">О компании</p>
             <h2 className="text-6xl md:text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-              Дизайн с
+              Логистика с
               <br />
-              <HighlightedText>намерением</HighlightedText>
+              <HighlightedText>гарантией</HighlightedText>
             </h2>
 
             <div className="relative hidden lg:block">
               <img
                 src="/images/exterior.png"
-                alt="Архитектурный эскиз рабочего пространства"
-                className="opacity-90 relative z-10 w-auto"
+                alt="Нефтеналивная цистерна"
+                className="opacity-90 relative z-10 w-auto rounded-lg"
               />
             </div>
           </div>
 
-          {/* Right column - Description and Philosophy items */}
           <div className="space-y-6 lg:pt-48">
             <p className="text-muted-foreground text-lg leading-relaxed max-w-md mb-12">
-              Архитектура - это больше, чем конструкция. Это то, как мы воспринимаем мир. Мы создаем пространства, которые питают человеческий дух.
+              Более 18 лет мы обеспечиваем бесперебойную транспортировку нефтепродуктов для нефтяных компаний, АЗС, авиационных предприятий и промышленных производств по всей территории России.
             </p>
 
             {philosophyItems.map((item, index) => (

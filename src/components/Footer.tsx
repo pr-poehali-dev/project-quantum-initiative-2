@@ -3,81 +3,70 @@ export function Footer() {
     <footer className="py-16 md:py-24 border-t border-border">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
-          {/* Brand */}
           <div className="md:col-span-2">
             <a href="/" className="inline-block mb-6">
-              <img src="/images/hously-logo.svg" alt="Пространство" width={120} height={32} className="w-auto h-6" />
+              <span className="text-xl font-semibold tracking-tight">НефтеТранс</span>
             </a>
             <p className="text-muted-foreground leading-relaxed max-w-sm">
-              Создаем пространства для жизни. Архитектурный опыт, где форма, свет и намерение встречаются.
+              Надёжная перевозка нефтепродуктов по всей России с 2005 года. Лицензированный перевозчик опасных грузов класса 3.
             </p>
+            <div className="mt-6 flex flex-col gap-2 text-sm text-muted-foreground">
+              <span>ООО «НефтеТранс»</span>
+              <span>Лицензия № АСС-77-123456</span>
+              <span>ИНН 7701234567</span>
+            </div>
           </div>
 
-          {/* Navigation */}
           <div>
-            <h4 className="text-sm font-medium mb-4">Студия</h4>
+            <h4 className="text-sm font-medium mb-4">Компания</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="#projects" className="hover:text-foreground transition-colors">
-                  Проекты
-                </a>
+                <a href="#projects" className="hover:text-foreground transition-colors">Виды грузов</a>
               </li>
               <li>
-                <a href="#about" className="hover:text-foreground transition-colors">
-                  О нас
-                </a>
+                <a href="#about" className="hover:text-foreground transition-colors">О нас</a>
               </li>
               <li>
-                <a href="#services" className="hover:text-foreground transition-colors">
-                  Услуги
-                </a>
+                <a href="#services" className="hover:text-foreground transition-colors">Услуги</a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-foreground transition-colors">
-                  Контакты
-                </a>
+                <a href="#pricing" className="hover:text-foreground transition-colors">Цены</a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-foreground transition-colors">Контакты</a>
               </li>
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
-            <h4 className="text-sm font-medium mb-4">Связь</h4>
+            <h4 className="text-sm font-medium mb-4">Связаться</h4>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
-                <a href="mailto:hello@prostranstvo.ru" className="hover:text-foreground transition-colors">
-                  hello@prostranstvo.ru
+                <a href="tel:+78001234567" className="hover:text-foreground transition-colors font-medium text-foreground">
+                  8-800-123-45-67
+                </a>
+                <p className="text-xs mt-0.5">Бесплатно по России</p>
+              </li>
+              <li>
+                <a href="mailto:info@neftetrans.ru" className="hover:text-foreground transition-colors">
+                  info@neftetrans.ru
                 </a>
               </li>
               <li>
-                <a href="tel:+74951234567" className="hover:text-foreground transition-colors">
-                  +7 (495) 123-45-67
-                </a>
+                <a href="#" className="hover:text-foreground transition-colors">Телеграм</a>
               </li>
               <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  Телеграм
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-foreground transition-colors">
-                  ВКонтакте
-                </a>
+                <a href="#" className="hover:text-foreground transition-colors">ВКонтакте</a>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col md:flex-row md:items-center justify-between gap-4 text-sm text-muted-foreground">
-          <p>© 2025 Пространство. Все права защищены.</p>
+          <p>© 2025 НефтеТранс. Все права защищены.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-foreground transition-colors">
-              Политика конфиденциальности
-            </a>
-            <a href="#" className="hover:text-foreground transition-colors">
-              Условия использования
-            </a>
+            <a href="#" className="hover:text-foreground transition-colors">Политика конфиденциальности</a>
+            <a href="#" className="hover:text-foreground transition-colors">Условия использования</a>
           </div>
         </div>
       </div>
